@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor IP Information</title>
+</head>
+<body>
+    <h1>Visitor IP Information</h1>
+    <p><strong>IP Address:</strong> {{ visitor_ip }}</p>
+    <h2>Details</h2>
+    <ul>
+        {% for key, value in ip_details.items %}
+            <li><strong>{{ key }}:</strong> {{ value }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
